@@ -11,24 +11,23 @@ const Navigation = () => {
       <Navbar className="navigation" bg="dark" variant="dark">
         <Container className="container">
           <Navbar.Brand>Michael</Navbar.Brand>
-          <Nav className="d-none d-md-flex flex-row">
-            <NavLink to="/about">About</NavLink>
-            <NavLink to="/abilities">Abilities</NavLink>
-            <NavLink to="/contact-me">Contact Me</NavLink>
-            <NavLink to="/projects">Projects</NavLink>
-            <NavLink to="/workbackground">Workbackground</NavLink>
+          <Nav className="d-none d-md-flex flex-row links">
+            <NavLink to="/about">Über mich</NavLink>
+            <NavLink to="/workbackground">Werdegang</NavLink>
+            <NavLink to="/abilities">Fähigkeiten</NavLink>
+            <NavLink to="/projects">Projekte</NavLink>
+            <NavLink to="/contact-me">Kontakt</NavLink>
           </Nav>
           <DropdownButton
             className="dropdown d-sm-flex d-md-none"
             id="dropdown-item-button"
-            title="Dropdown button"
+            title="Auswahl"
           >
-            <Dropdown.ItemText>Dropdown item text</Dropdown.ItemText>
-            <Dropdown.Item as="button"><NavLink to="/about">About</NavLink></Dropdown.Item>
-            <Dropdown.Item as="button"><NavLink to="/abilities">Abilities</NavLink></Dropdown.Item>
-            <Dropdown.Item as="button"><NavLink to="/contact-me">Contact Me</NavLink></Dropdown.Item>
-            <Dropdown.Item as="button"><NavLink to="/projects">Projects</NavLink></Dropdown.Item>
-            <Dropdown.Item as="button"><NavLink to="/workbackground">Workbackground</NavLink></Dropdown.Item>
+            <NavLink className="links" to="/about"><Dropdown.Item as="button">Über mich</Dropdown.Item></NavLink>
+            <NavLink className="links" to="/workbackground"><Dropdown.Item as="button">Werdegang</Dropdown.Item></NavLink>
+            <NavLink className="links" to="/abilities"><Dropdown.Item as="button">Fähigkeiten</Dropdown.Item></NavLink>
+            <NavLink className="links" to="/projects"><Dropdown.Item as="button">Projekte</Dropdown.Item></NavLink>
+            <NavLink className="links" to="/contact-me"><Dropdown.Item as="button">Kontakt</Dropdown.Item></NavLink>
           </DropdownButton>
         </Container>
       </Navbar>

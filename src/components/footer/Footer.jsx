@@ -1,7 +1,9 @@
+import "./footer.css"
+
 const Footer = () => {
-    return(<>
+    return(<div className="footer-container">
     footer
-    </>
+    </div>
         
     )
 }

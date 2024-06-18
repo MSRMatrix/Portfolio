@@ -6,11 +6,11 @@ const Dashboard = () => {
     return(
     <>
     <Navigation />
-    <Outlet />
-    
+    <div className="test">
+    <Outlet />    
+    </div>
     <Footer />
     </>
-        
     )
 }
 

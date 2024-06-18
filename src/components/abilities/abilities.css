@@ -1,0 +1,14 @@
+
+.img-container>div>img{
+    height: 400px;
+    width: max-content;
+    border-radius: 100px;
+    background-color: transparent;
+    padding: 40px;
+}
+
+.img-container{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}

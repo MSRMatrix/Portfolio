@@ -6,5 +6,6 @@ Portfolio
 -Deployen
 -Modern und strukturiert
 -Mehr als nur React und Javascript
-
--Navigation muss zuerst fertiggestellt werden# Portfolio
+-Animationen/Transition für den Übergang
+-Namen animieren
+-Responsive ist ein Muss!

@@ -1,10 +1,11 @@
 const ContactMe = () => {
     return(
-    <>
-    Email: michaelrolo11@gmail.com
-        Handynummer: 49 01520 3064584
-        Weiteres: Github`,
-    </>
+    <div className="information-container">
+        <h1>Kontaktiere mich!</h1>
+        <p>Email: michaelrolo11@gmail.com</p>
+        <p>Handynummer: 49 01520 3064584</p>
+        <p>Weiteres: Github</p>
+    </div>
         
     )
 }

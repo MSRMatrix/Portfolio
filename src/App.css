@@ -2,4 +2,18 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    color: white;
+}
+
+.information-container{
+    background-color: rgb(5, 48, 85);
+    height: 100%;
+}
+
+html {
+    scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }

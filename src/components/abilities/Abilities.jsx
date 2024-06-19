@@ -36,7 +36,7 @@ const Abilities = () => {
           <div key={skill.name} className="picture-div">
             <img src={skill.image} alt={skill.name} />
             <div className="hover-text">{skill.text}</div>
-            <h2>{skill.name}</h2>
+            <h3>{skill.name}</h3>
           </div>
         ))}
       </div>

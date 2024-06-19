@@ -15,7 +15,7 @@
   height: 250px;
   background-color: #f0f0f0;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  position: relative;
+
   transition: background 1s ease-in-out;
 }
 
@@ -55,8 +55,4 @@
 
 .picture-div:hover {
   transform: scale(1.3);
-}
-
-.picture-div:not(:hover) {
-  transform: scale(1);
 }

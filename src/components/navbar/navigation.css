@@ -40,3 +40,15 @@ a{
     background-color: red;
     width: 100%px;
 }
+
+.time{
+    background-color: #5a5858;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+@media (max-width: 320px){
+    .time{
+        display: none;
+    }
+}

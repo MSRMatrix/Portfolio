@@ -4,13 +4,24 @@ import Dropdown from "react-bootstrap/Dropdown";
 import DropdownButton from "react-bootstrap/DropdownButton";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./navigation.css";
+import { useState } from "react";
+
+
 
 const Navigation = () => {
+  const [time, setTime] = useState()
+  
+setTimeout(() => {
+    const currentTime = new Date()
+    setTime(currentTime.toLocaleTimeString())
+  }, 1000);
+
   return (
     <>
       <Navbar className="navigation" bg="dark" variant="dark">
         <Container className="container">
           <Navbar.Brand>Michael</Navbar.Brand>
+          <p className="time">{time}</p>
           <Nav className="d-none d-md-flex flex-row links">
             <NavLink to="/about">Über mich</NavLink>
             <NavLink to="/workbackground">Werdegang</NavLink>

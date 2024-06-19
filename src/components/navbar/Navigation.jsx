@@ -20,9 +20,10 @@ setTimeout(() => {
     <>
       <Navbar className="navigation" bg="dark" variant="dark">
         <Container className="container">
-          <Navbar.Brand>Michael</Navbar.Brand>
+          <Navbar.Brand><NavLink to="/">Michael</NavLink></Navbar.Brand>
           <p className="time">{time}</p>
           <Nav className="d-none d-md-flex flex-row links">
+          <NavLink to="/">Dashboard</NavLink>
             <NavLink to="/about">Über mich</NavLink>
             <NavLink to="/workbackground">Werdegang</NavLink>
             <NavLink to="/abilities">Fähigkeiten</NavLink>
@@ -34,6 +35,7 @@ setTimeout(() => {
             id="dropdown-item-button"
             title="Auswahl"
           >
+            <NavLink className="links" to="/"><Dropdown.Item as="button">Dashboard</Dropdown.Item></NavLink>
             <NavLink className="links" to="/about"><Dropdown.Item as="button">Über mich</Dropdown.Item></NavLink>
             <NavLink className="links" to="/workbackground"><Dropdown.Item as="button">Werdegang</Dropdown.Item></NavLink>
             <NavLink className="links" to="/abilities"><Dropdown.Item as="button">Fähigkeiten</Dropdown.Item></NavLink>

@@ -9,3 +9,5 @@ Portfolio
 -Animationen/Transition für den Übergang
 -Namen animieren
 -Responsive ist ein Muss!
+
+-Für das Dashboard ein Wallpaper einrichten. Irgendwas cooles

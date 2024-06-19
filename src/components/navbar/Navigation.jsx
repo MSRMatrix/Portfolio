@@ -9,7 +9,7 @@ import { useState } from "react";
 
 
 const Navigation = () => {
-  const [time, setTime] = useState()
+  const [time, setTime] = useState(new Date().toLocaleTimeString())
   
 setTimeout(() => {
     const currentTime = new Date()

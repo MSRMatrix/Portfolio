@@ -1,11 +1,4 @@
-.information-container {
-    background-color: rgb(5, 48, 85); /* Dark blue background color */
-    flex: 1; /* Make it expand to fill the remaining space */
-    color: white; /* Ensure text color is white for better contrast */
-    padding: 20px; /* Add some padding for inner spacing */
-    box-sizing: border-box; /* Include padding in element's total width and height */
-    min-height: 100vh; /* Ensure it is at least 100vh tall */
-}
+
 
 /* Footer styles */
 .footer {

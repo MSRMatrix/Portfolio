@@ -34,6 +34,10 @@
   text-align: center;
 }
 
+.h1-from-abilities{
+  margin: 0 auto;
+}
+
 .picture-div:first-child:hover {
   transform: rotate(360deg);
 }

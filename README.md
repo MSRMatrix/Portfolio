@@ -10,4 +10,7 @@ Portfolio
 -Namen animieren
 -Responsive ist ein Muss!
 
--Für das Dashboard ein Wallpaper einrichten. Irgendwas cooles
+-Für das Dashboard ein Wallpaper einrichten. Irgendwas cooles(Animationen)
+-Übergang zu den Komponenten mit Transition abweichen
+-Besseren Style auswählen
+-Icons hinzufügen 

@@ -11,11 +11,10 @@ function App() {
 
   const router = createBrowserRouter([
     {
-      path: "*",
       element: <Dashboard />,
       children: [
         {
-        path: "start",
+        path: "*",
         element: <Startsite />
       },
         {

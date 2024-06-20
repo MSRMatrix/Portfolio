@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Rowdies:wght@300;400;700&display=swap');
+
 *{
     margin: 0px;
     padding: 0px;
@@ -5,9 +8,12 @@
     color: white;
 }
 
-.information-container{
-    background-color: rgb(5, 48, 85);
-    height: 100%;
+.information-container {
+    flex: 1;
+    color: white;
+    padding: 20px; 
+    box-sizing: border-box; 
+    min-height: 100vh; 
 }
 
 html {
@@ -16,4 +22,15 @@ html {
 
 ::-webkit-scrollbar {
     display: none;
+}
+
+h1{
+    background-color: black;
+    width: fit-content;
+    padding: 10px;
+    font-family: "Rowdies", Arial;
+}
+
+p{
+    font-family: "Exo", Arial;
 }

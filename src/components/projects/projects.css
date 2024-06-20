@@ -2,11 +2,16 @@
     display: flex;
     text-align: center;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-evenly; 
 }
 
 .project-container>div>a>img{
     width: fit-content;
     height: 200px;
     border-radius: 100px;
+}
+
+.project-container>div>a{
+    display: flex;
+    justify-content: center;
 }

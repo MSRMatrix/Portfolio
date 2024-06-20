@@ -6,6 +6,7 @@ import About from './components/about/About'
 import ContactMe from './components/contactme/ContactMe'
 import Projects from './components/projects/Projects'
 import Workbackground from './components/workbackground/Workbackground'
+import Startsite from './components/startsite/Startsite'
 function App() {
 
   const router = createBrowserRouter([
@@ -13,6 +14,10 @@ function App() {
       path: "*",
       element: <Dashboard />,
       children: [
+        {
+        path: "start",
+        element: <Startsite />
+      },
         {
       path: "abilities",
       element: <Abilities />

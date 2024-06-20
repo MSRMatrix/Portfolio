@@ -14,7 +14,7 @@ const Projects = () => {
           <a target="_blank" rel="noopener noreferrer" href="https://media-player-seven-black.vercel.app/"><img src={acoustiFlow} alt="" /></a>
         </div>
         <div>
-          <a target="_blank" rel="noopener noreferrer" href="https://stuffit-x83e.onrender.com/"><h2>StuffIt</h2></a>
+          <a target="_blank" rel="noopener noreferrer" href="https://stuffit-x83e.onrender.com/"><h1>StuffIt</h1></a>
           <a target="_blank" rel="noopener noreferrer" href="https://stuffit-x83e.onrender.com/"><img src={cashStuffing} alt="" /></a>
         </div>
         <div>

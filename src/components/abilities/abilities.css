@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Kalam:wght@300;400;700&family=Rowdies:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Kalam:wght@300;400;700&family=Rowdies:wght@300;400;700&display=swap");
 
 .img-container {
   display: flex;
@@ -17,7 +17,11 @@
   border-radius: 20px;
   background-color: #f0f0f0;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  transition: transform 1s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.picture-div:hover{
+  background-color: #186a79;
 }
 
 .picture-div img {
@@ -34,22 +38,23 @@
   text-align: center;
 }
 
-.h1-from-abilities{
+.h1-from-abilities {
   margin: 0 auto;
 }
 
-.picture-div:first-child:hover {
-  transform: rotate(360deg);
+.fa-check {
+  color: #333;
+  animation-name: iconCheck;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
 }
 
-.picture-div:nth-child(2):hover {
-  transform: scale(1.2);
+.sand-clock>i{
+  color: #333;
+  
 }
 
-.picture-div:nth-child(3):hover {
-  transform: matrix(1.2, 0.2, -1, 0.9, 0, 20);
-}
-
-.picture-div:nth-child(4):hover {
-  transform: translate(42px, 18px);
+@keyframes iconCheck {
+  0% {color: #333}
+  50% {color: rgb(15, 233, 15)}
 }

@@ -18,6 +18,7 @@ module.exports = {
     ],
     'react/prop-types': 'off',
     'no-unused-vars': 'off',
-    'react/no-unescaped-entities': 'off'
+    'react/no-unescaped-entities': 'off',
+    'react/jsx-key': 'off'
   },
 }

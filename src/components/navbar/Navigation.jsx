@@ -7,7 +7,6 @@ import "./navigation.css";
 import { useState } from "react";
 
 
-
 const Navigation = () => {
   const [time, setTime] = useState(new Date().toLocaleTimeString())
   
@@ -20,7 +19,7 @@ setTimeout(() => {
     <>
       <Navbar className="navigation" bg="dark" variant="dark">
         <Container className="container">
-          <Navbar.Brand><NavLink to="/">Michael</NavLink></Navbar.Brand>
+          <Navbar.Brand><NavLink className="my-name" to="/">Michael</NavLink></Navbar.Brand>
           <p className="time">{time}</p>
           <Nav className="d-none d-md-flex flex-row links">
           <NavLink className="list" to="/">Start</NavLink>

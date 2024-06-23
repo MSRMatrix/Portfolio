@@ -14,3 +14,4 @@ Portfolio
 -Übergang zu den Komponenten mit Transition abweichen
 -Besseren Style auswählen
 -Icons hinzufügen 
+-Moderne Ladekomponente

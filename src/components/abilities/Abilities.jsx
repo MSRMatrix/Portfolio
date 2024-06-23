@@ -4,6 +4,8 @@ import css from "/src/assets/css3.png";
 import js from "/src/assets/js.png";
 import mernStack from "/src/assets/mern-stack.png";
 import python from "/src/assets/python.png";
+import sass from "/src/assets/Sass.png";
+import typescript from "/src/assets/typescript.png"
 import { useEffect, useState } from "react";
 
 const Abilities = () => {
@@ -27,6 +29,10 @@ const Abilities = () => {
       name: "MERN Stack",
       image: mernStack,
     },
+    {
+      name: "SASS",
+      image: sass
+    }
   ];
 
   const inProgress = [
@@ -34,6 +40,10 @@ const Abilities = () => {
       name: "PYTHON",
       image: python,
     },
+    {
+      name: "TypeScript",
+      image: typescript
+    }
   ];
 
   useEffect(() => {

@@ -6,7 +6,14 @@
   flex-wrap: wrap;
 }
 
+.img-class{
+  opacity: 0;
+}
 
+.img-animation{
+  transition: 1s ease-in-out;
+  opacity: 1;
+}
 
 .picture-div {
   opacity: 0;

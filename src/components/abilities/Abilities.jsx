@@ -14,6 +14,7 @@ const Abilities = () => {
   );
   const [topic, setTopic] = useState("h1-from-abilities");
   const [imageContainer, setImageContainer] = useState("picture-div")
+  const [imgAnimation, setImgAnimation] = useState("img-class")
   const skills = [
     {
       name: "HTML",
@@ -51,6 +52,7 @@ const Abilities = () => {
   useEffect(() => {
     setTopic(topic + " enter-class")
     setImageContainer(imageContainer + " show-img")
+    setImgAnimation(imgAnimation + " img-animation")
     const icons = [
       <i className="fa-solid fa-hourglass-start"></i>,
       <i className="fa-solid fa-hourglass-half"></i>,
@@ -75,7 +77,7 @@ const Abilities = () => {
       <div className="img-container">
         {skills.map((skill) => (
           <div key={skill.name} className={imageContainer}>
-            <img src={skill.image} alt={skill.name} />
+            <img src={skill.image} alt={skill.name} className={imgAnimation}/>
             <h3>
               {skill.name}
               <i className="fa-solid fa-check"></i>
@@ -87,7 +89,7 @@ const Abilities = () => {
       <div className="img-container">
         {inProgress.map((skill) => (
           <div key={skill.name} className={imageContainer}>
-            <img src={skill.image} alt={skill.name} />
+            <img src={skill.image} alt={skill.name} className={imgAnimation}/>
             <h3 className="sand-clock">
               {skill.name}
               {icon}

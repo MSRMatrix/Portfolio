@@ -1,37 +1,53 @@
-
-
-/* Footer styles */
 .footer {
-    background-color: #333; /* Dark grey background color */
-    color: white; /* White text color */
-    padding: 20px 0; /* Padding on top and bottom */
+    background-color: #333; 
+    color: white; 
+    padding: 20px 0; 
 }
 
 .footer-container {
-    display: flex; /* Use flexbox */
-    justify-content: space-around; /* Distribute items evenly */
-    width: 100vw;/* Limit max width */
-    margin: 0 auto; /* Center align */
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    margin: 0 auto;
 }
 
 .footer-section {
-    flex: 1; /* Make sections equal width */
+    flex: 1;
 }
 
 .footer-section h4 {
-    margin-bottom: 10px; /* Spacing below headings */
+    margin-bottom: 10px; 
 }
 
 .footer-section p {
-    margin: 5px 0; /* Spacing between paragraphs */
+    margin: 5px 0; 
 }
 
 .social-icons a {
-    margin: 0 10px; /* Spacing between icons */
-    display: inline-block; /* Ensure icons are inline */
+    margin: 0 10px;
+    display: inline-block; 
 }
 
 .social-icons img {
-    width: 24px; /* Icon width */
-    height: 24px; /* Icon height */
+    width: 24px;
+    height: 24px;
+}
+
+
+@media (max-width: 480px){
+    .footer{
+        font-size: 70%;
+    }
+    .footer-section:last-child{
+        text-align: right;
+    }
+    .footer-section h4{
+        font-size: 100%;
+    }
+}
+
+@media (max-width: 336px){
+    .footer{
+        font-size: 50%;
+    }
 }

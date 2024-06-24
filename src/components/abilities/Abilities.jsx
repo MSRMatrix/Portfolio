@@ -12,7 +12,7 @@ const Abilities = () => {
   const [icon, setIcon] = useState(
     <i className="fa-solid fa-hourglass-start"></i>
   );
-  const [topic, setTopic] = useState("h1-from-abilities");
+  const [topic, setTopic] = useState("h1-from-abilities topic");
   const [imageContainer, setImageContainer] = useState("picture-div")
   const [imgAnimation, setImgAnimation] = useState("img-class")
   const skills = [

@@ -18,9 +18,6 @@ const Dashboard = () => {
         setExiting(true);
         return next();
       }}
-      onExit={() => {
-        setExiting(false);
-      }}
       transition={{ duration: 0.5 }}
     >
       {exiting? null : <Outlet />}

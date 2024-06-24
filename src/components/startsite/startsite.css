@@ -1,9 +1,3 @@
-.topic-div{
-    transition: 1s ease-in-out;
-    opacity: 0;
-    transform: translate(-50px);
-}
-
 .enter-class{
     transition: 1s ease-in-out;
     opacity: 1;
@@ -23,9 +17,21 @@
     transition: 0.3s ease-in-out;
 }
 
+.startsite-image:first-child{
+    transform: translate(-100px);
+}
+
+.startsite-image:last-child{
+    transform: translate(100px);
+}
+
 .pic-animation{
     transition: 1s ease-in-out;
     opacity: 0.6;
+}
+
+.pic-animation:first-child, .pic-animation:last-child{
+    transform: translate(0px);
 }
 
 .pic-animation:hover{

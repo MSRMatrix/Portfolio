@@ -1,38 +1,56 @@
-@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Rowdies:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Rowdies:wght@300;400;700&display=swap");
 
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    color: #ffffff;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  color: #ffffff;
 }
 
 .information-container {
-    flex: 1;
-    color: white;
-    padding: 20px; 
-    box-sizing: border-box; 
-    min-height: 100vh;  
+  flex: 1;
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  min-height: 100vh;
 }
 
-
 html {
-    scrollbar-width: none;
+  scrollbar-width: none;
 }
 
 ::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
-h1{
-    background-color: black;
+h1 {
     width: fit-content;
-    padding: 10px;
-    font-family: "Rowdies", Arial;
+    margin: 0 auto;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  font-family: "Rowdies", Arial;
+  cursor: default;
 }
 
-p{
-    font-family: "Exo", Arial;
+h1:hover {
+  color: #186a79;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
+p {
+  font-family: "Exo", Arial;
+}
+
+.topic {
+  margin: 0 auto;
+  transition: 1s ease-in-out;
+  opacity: 0;
+  transform: translate(-50px);
+}

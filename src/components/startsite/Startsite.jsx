@@ -4,7 +4,7 @@ import kiWoman from "/src/assets/ai-woman.png"
 import { useState, useEffect } from "react";
 
 const Startsite = () => {
-  const [topicDiv, setTopicDiv] = useState("topic-div");
+  const [topicDiv, setTopicDiv] = useState("topic");
   const [pics, setPics] = useState("startsite-image");
 
   useEffect(() => {

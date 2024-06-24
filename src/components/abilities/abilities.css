@@ -6,7 +6,10 @@
   flex-wrap: wrap;
 }
 
+
+
 .picture-div {
+  opacity: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,6 +21,13 @@
   background-color: #f0f0f0;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   transition: background-color 0.5s ease-in-out;
+  transform: translateY(-40px);
+}
+
+.show-img{
+  transition: 1s ease-in-out;
+  opacity: 1;
+  transform: translateY(0px);
 }
 
 .picture-div:hover{
@@ -41,6 +51,15 @@
 
 .h1-from-abilities {
   margin: 0 auto;
+  transition: 1s ease-in-out;
+  opacity: 0;
+  transform: translate(-50px);
+}
+
+.enter-class{
+  transition: 1s ease-in-out;
+  opacity: 1;
+  transform: translate(0px);
 }
 
 .fa-check {
@@ -52,7 +71,6 @@
 
 .sand-clock>i{
   color: #333;
-  
 }
 
 @keyframes iconCheck {

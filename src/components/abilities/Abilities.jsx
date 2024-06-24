@@ -12,6 +12,8 @@ const Abilities = () => {
   const [icon, setIcon] = useState(
     <i className="fa-solid fa-hourglass-start"></i>
   );
+  const [topic, setTopic] = useState("h1-from-abilities");
+  const [imageContainer, setImageContainer] = useState("picture-div")
   const skills = [
     {
       name: "HTML",
@@ -47,6 +49,8 @@ const Abilities = () => {
   ];
 
   useEffect(() => {
+    setTopic(topic + " enter-class")
+    setImageContainer(imageContainer + " show-img")
     const icons = [
       <i className="fa-solid fa-hourglass-start"></i>,
       <i className="fa-solid fa-hourglass-half"></i>,
@@ -61,14 +65,16 @@ const Abilities = () => {
     }, 1000);
 
     return () => clearInterval(interval);
+
+    
   }, []);
 
   return (
     <div className="information-container">
-      <h1 className="h1-from-abilities">Meine Developer Fähigkeiten</h1>
+      <h1 className={topic}>Meine Developer Fähigkeiten</h1>
       <div className="img-container">
         {skills.map((skill) => (
-          <div key={skill.name} className="picture-div">
+          <div key={skill.name} className={imageContainer}>
             <img src={skill.image} alt={skill.name} />
             <h3>
               {skill.name}
@@ -77,10 +83,10 @@ const Abilities = () => {
           </div>
         ))}
       </div>
-      <h1 className="h1-from-abilities">Lernphase</h1>
+      <h1 className={topic}>Lernphase</h1>
       <div className="img-container">
         {inProgress.map((skill) => (
-          <div key={skill.name} className="picture-div">
+          <div key={skill.name} className={imageContainer}>
             <img src={skill.image} alt={skill.name} />
             <h3 className="sand-clock">
               {skill.name}

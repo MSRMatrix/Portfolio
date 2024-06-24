@@ -1,4 +1,35 @@
+.topic-div{
+    transition: 1s ease-in-out;
+    opacity: 0;
+    transform: translate(-50px);
+}
+
+.enter-class{
+    transition: 1s ease-in-out;
+    opacity: 1;
+    transform: translate(0px);
+}
+
+.ki-div{
+    width: 50%;
+   display: flex;
+   transition: 1s ease-in-out;
+}
+
 .startsite-image{
-    width: 300px;
+    width: 100%;
+    opacity: 0;
+    z-index: 1;
+    transition: 0.3s ease-in-out;
+}
+
+.pic-animation{
+    transition: 1s ease-in-out;
     opacity: 0.6;
+}
+
+.pic-animation:hover{
+    transition: 0.3s ease-in-out;
+    opacity: 1;
+    border-radius: 30px;
 }

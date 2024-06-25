@@ -13,13 +13,25 @@
     transform: translate(-150px);
 }
 
+.project-topic{
+    border-bottom: 2px solid black;
+    width: 100%;
+    font-family: "Kalam", cursive;
+    margin-top: 10px;
+    color: #333;
+    text-align: center;
+    font-size: 24px;
+}
+
 .project-container>div>a{
     display: flex;
     justify-content: center;
 }
 
 .project-div{
-    background-color: aliceblue;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 10px;
     opacity: 0;
     transform: translate(50px);
     transition: 1s ease-in-out;

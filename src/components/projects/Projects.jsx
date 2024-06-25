@@ -22,15 +22,15 @@ const Projects = () => {
       <h1 className={topic}>Meine Projekte</h1>
       <div className="project-container">
         <div className={showProjectDiv}>
-          <a target="_blank" rel="noopener noreferrer" href="https://media-player-seven-black.vercel.app/"><h1>AcoustiFlow</h1></a>
+          <a target="_blank" rel="noopener noreferrer" href="https://media-player-seven-black.vercel.app/"><h3 className="project-topic">AcoustiFlow</h3></a>
           <a target="_blank" rel="noopener noreferrer" href="https://media-player-seven-black.vercel.app/"><img src={acoustiFlow} alt="" className={showPic}/></a>
         </div>
         <div className={showProjectDiv}>
-          <a target="_blank" rel="noopener noreferrer" href="https://stuffit-x83e.onrender.com/"><h1>StuffIt</h1></a>
+          <a target="_blank" rel="noopener noreferrer" href="https://stuffit-x83e.onrender.com/"><h3 className="project-topic">StuffIt</h3></a>
           <a target="_blank" rel="noopener noreferrer" href="https://stuffit-x83e.onrender.com/"><img src={cashStuffing} alt="" className={showPic}/></a>
         </div>
         <div className={showProjectDiv}>
-          <a target="_blank" rel="noopener noreferrer" href="https://weatherapp-amber-six.vercel.app/"><h1>Weather App</h1></a>
+          <a target="_blank" rel="noopener noreferrer" href="https://weatherapp-amber-six.vercel.app/"><h3 className="project-topic">Weather App</h3></a>
           <a target="_blank" rel="noopener noreferrer" href="https://weatherapp-amber-six.vercel.app/"><img src={weatherApp} alt="" className={showPic}/></a>
         </div>
       </div>

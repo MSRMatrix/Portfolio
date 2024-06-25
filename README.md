@@ -9,4 +9,5 @@ Portfolio
 -Besseren Style auswählen
 -Moderne Ladekomponente
 -Navbar breiter oder dunkler einstellen(Je nachdem was besser aussieht)
--Hintergrund sollte animiert sein
+-Hintergrundbilder ändern
+-Transition Problem lösen

@@ -7,20 +7,6 @@ import ContactMe from "./components/contactme/ContactMe";
 import Projects from "./components/projects/Projects";
 import Workbackground from "./components/workbackground/Workbackground";
 import Startsite from "./components/startsite/Startsite";
-import kiMan from "/src/assets/ki-man.png";
-import kiWoman from "/src/assets/ai-woman.png";
-import styled from 'styled-components';
-import { useEffect, useState } from "react";
-
-const HtmlDiv = styled.div`
-  transition: 1s all ease-in-out;
-  position: relative;
-  height: 100vh;
-  width: 100vw;
-  background-size: cover;
-  background-position: center;
-  background-image: ${({ $choosedPic }) => `url(${$choosedPic})`};
-`;
 
 function App() {
   const router = createBrowserRouter([
@@ -55,22 +41,11 @@ function App() {
     },
   ]);
 
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [choosedPic, setChoosedPic] = useState(kiMan);
-
-  useEffect(() => {
-    const pictures = [kiMan, kiWoman];
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % pictures.length);
-      setChoosedPic(pictures[(currentIndex + 1) % pictures.length]);
-    }, 5000);
-    return () => clearInterval(interval);
-  }, [currentIndex]);
 
   return (
-    <HtmlDiv $choosedPic={choosedPic}>
+    <div>
       <RouterProvider router={router} />
-    </HtmlDiv>
+    </div>
   );
 }
 

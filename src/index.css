@@ -1,8 +1,15 @@
 body {
-    background-color: black;
+    background-image: url(https://img.genial.ly/59e059d30b9c21060cb4c2ec/31c73d4c-8cde-47ca-9727-56e67ace99b0.gif);
     height: 100vh;
     margin: 0; 
     display: flex; 
     flex-direction: column;
     font-family: Arial, sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
+
+/* https://i.gifer.com/7Ik1.gif */
+/* https://miro.medium.com/v2/resize:fit:720/format:webp/1*WKS5uUEDzK4YdVRq7DOkbw.gif */
+/* https://img.genial.ly/59e059d30b9c21060cb4c2ec/31c73d4c-8cde-47ca-9727-56e67ace99b0.gif */

@@ -1,7 +1,7 @@
 const Loading = () => {
     return(
         <>
-          <i style={{color: "black"}} className="fa-solid fa-spinner fa-spin"></i></>
+          <i className="fa-solid fa-spinner fa-spin"></i></>
     )
 }
 

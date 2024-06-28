@@ -70,8 +70,17 @@
   animation-iteration-count: infinite;
 }
 
+.sand-clock{
+  margin-top: 10px;
+  width: 200px;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+}
+
 .sand-clock>i{
   color: #333;
+  margin-left: 10px;
 }
 
 @keyframes iconCheck {

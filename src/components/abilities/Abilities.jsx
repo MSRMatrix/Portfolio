@@ -4,7 +4,7 @@ import css from "/src/assets/css3.png";
 import js from "/src/assets/js.png";
 import mernStack from "/src/assets/mern-stack.png";
 import python from "/src/assets/python.png";
-import sass from "/src/assets/Sass.png";
+import scss from "/src/assets/scss.png";
 import typescript from "/src/assets/typescript.png"
 import { useEffect, useState } from "react";
 
@@ -33,8 +33,8 @@ const Abilities = () => {
       image: mernStack,
     },
     {
-      name: "SASS",
-      image: sass
+      name: "SCSS",
+      image: scss
     }
   ];
 
@@ -78,7 +78,7 @@ const Abilities = () => {
         {skills.map((skill) => (
           <div key={skill.name} className={imageContainer}>
             <img src={skill.image} alt={skill.name} className={imgAnimation}/>
-            <h3>
+            <h3 className="sand-clock">
               {skill.name}
               <i className="fa-solid fa-check"></i>
             </h3>

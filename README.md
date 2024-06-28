@@ -9,5 +9,4 @@ Portfolio
 -Besseren Style auswählen
 -Moderne Ladekomponente
 -Navbar breiter oder dunkler einstellen(Je nachdem was besser aussieht)
--Hintergrundbilder ändern
--Transition Problem lösen
+-Unterschiedliche Karten

@@ -5,7 +5,7 @@ import js from "/src/assets/js.png";
 import mernStack from "/src/assets/mern-stack.png";
 import python from "/src/assets/python.png";
 import scss from "/src/assets/scss.png";
-import typescript from "/src/assets/typescript.png"
+import typescript from "/src/assets/typescript.png";
 import { useEffect, useState } from "react";
 
 const Abilities = () => {
@@ -13,8 +13,8 @@ const Abilities = () => {
     <i className="fa-solid fa-hourglass-start"></i>
   );
   const [topic, setTopic] = useState("h1-from-abilities topic");
-  const [imageContainer, setImageContainer] = useState("picture-div")
-  const [imgAnimation, setImgAnimation] = useState("img-class")
+  const [imageContainer, setImageContainer] = useState("picture-div");
+  const [imgAnimation, setImgAnimation] = useState("img-class");
   const skills = [
     {
       name: "HTML",
@@ -34,8 +34,8 @@ const Abilities = () => {
     },
     {
       name: "SCSS",
-      image: scss
-    }
+      image: scss,
+    },
   ];
 
   const inProgress = [
@@ -45,14 +45,14 @@ const Abilities = () => {
     },
     {
       name: "TypeScript",
-      image: typescript
-    }
+      image: typescript,
+    },
   ];
 
   useEffect(() => {
-    setTopic(topic + " enter-class")
-    setImageContainer(imageContainer + " show-img")
-    setImgAnimation(imgAnimation + " img-animation")
+    setTopic(topic + " enter-class");
+    setImageContainer(imageContainer + " show-img");
+    setImgAnimation(imgAnimation + " img-animation");
     const icons = [
       <i className="fa-solid fa-hourglass-start"></i>,
       <i className="fa-solid fa-hourglass-half"></i>,
@@ -67,8 +67,6 @@ const Abilities = () => {
     }, 1000);
 
     return () => clearInterval(interval);
-
-    
   }, []);
 
   return (
@@ -77,7 +75,7 @@ const Abilities = () => {
       <div className="img-container">
         {skills.map((skill) => (
           <div key={skill.name} className={imageContainer}>
-            <img src={skill.image} alt={skill.name} className={imgAnimation}/>
+            <img src={skill.image} alt={skill.name} className={imgAnimation} />
             <h3 className="sand-clock">
               {skill.name}
               <i className="fa-solid fa-check"></i>
@@ -89,7 +87,7 @@ const Abilities = () => {
       <div className="img-container">
         {inProgress.map((skill) => (
           <div key={skill.name} className={imageContainer}>
-            <img src={skill.image} alt={skill.name} className={imgAnimation}/>
+            <img src={skill.image} alt={skill.name} className={imgAnimation} />
             <h3 className="sand-clock">
               {skill.name}
               {icon}

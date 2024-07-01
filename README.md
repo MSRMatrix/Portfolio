@@ -10,3 +10,5 @@ Portfolio
 -Moderne Ladekomponente
 -Navbar breiter oder dunkler einstellen(Je nachdem was besser aussieht)
 -Unterschiedliche Karten
+-Beruflicher Werdegang in einem Säulendiagramm oder was in der Art anzeigen(Hovereffekte)
+-

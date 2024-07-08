@@ -1,6 +1,17 @@
-.work-div img{
-    width: 100%;
-    height: max-content;
-    object-fit: cover;
-    border-radius: 20px 20px 0 0;
+.work-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px
+}
+
+.work-div{
+    background-color: #1d1c1cce;
+    width: 300px;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
 }

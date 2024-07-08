@@ -3,6 +3,73 @@
   gap: 20px;
 }
 
+.icon-container > .icon-text-box > a > i {
+  font-size: 25px;
+  color: #7b79ff;
+}
+
+.icon-text-box {
+  position: relative;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.icon-text-box p {
+  display: none;
+  position: absolute;
+  bottom: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #7b79ff;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  white-space: nowrap;
+}
+
+.icon-text-box:hover p {
+  display: block;
+}
+
+.fa-hand-point-left,
+.fa-hand-point-right {
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  align-self: center;
+}
+
+.fa-hand-point-left {
+  animation-name: leftHand;
+}
+
+.fa-hand-point-right {
+  animation-name: rightHand;
+}
+
+@keyframes leftHand {
+  0% {
+    transform: translate(-20px);
+  }
+  50% {
+    transform: translate(-25px);
+  }
+  100% {
+    transform: translate(-20px);
+  }
+}
+
+@keyframes rightHand {
+  0% {
+    transform: translate(20px);
+  }
+  50% {
+    transform: translate(25px);
+  }
+  100% {
+    transform: translate(20px);
+  }
+}
+
 .contact-text-block {
   display: grid;
   gap: 20px;
@@ -35,15 +102,15 @@
     margin: 0 auto;
   }
 
-  .contact-inner-text-block>*{
+  .contact-inner-text-block > * {
     font-size: 15px;
   }
 
-  .contact-inner-text-block>h3{
+  .contact-inner-text-block > h3 {
     font-weight: bolder;
   }
 
-  .contact-inner-text-block{
+  .contact-inner-text-block {
     width: 200px;
   }
 }

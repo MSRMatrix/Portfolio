@@ -16,7 +16,7 @@
 }
 
 .my-name:hover{
-    font-size: 25px;
+    color: #7b79ff;
 }
 
 .navbar{
@@ -59,7 +59,7 @@ a{
     background-color: #2c3e50be !important;
 }
 
-.dropdown>button:hover i, .time:hover, .my-name:hover, .list:hover{
+.dropdown>button:hover i, .time:hover, .list:hover{
     color: white;
 }
 

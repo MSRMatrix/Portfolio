@@ -2,7 +2,7 @@
     background-color: #1d1c1cce; 
     color: white; 
     padding: 20px 0; 
-    position: sticky;
+    position: relative;
     bottom: 0;
 }
 

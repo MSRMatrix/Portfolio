@@ -2,7 +2,8 @@
     background-color: #1d1c1cce; 
     color: white; 
     padding: 20px 0; 
-    position: relative;
+    margin-top: 100px;
+    position: sticky;
     bottom: 0;
 }
 

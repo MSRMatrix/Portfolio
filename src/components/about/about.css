@@ -6,10 +6,17 @@
   }
   
   .inner-text-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
     padding: 20px;
     border-radius: 8px;
     margin-bottom: 20px;
-    text-align: center;
+    width: 250px;
+    height: 100px;
+    background-color: #1d1c1cce; 
   }
 
   .inner-text-block> *{
@@ -56,10 +63,11 @@
     }
   }
 
-  @media (max-width: 423px) {
+  @media (max-width: 600px) {
   
     .text-block{
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
     }
   }

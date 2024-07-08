@@ -1,73 +1,67 @@
-
 .text-block {
-    margin-top: 20px;
-    display: grid;
-    grid-template-columns: 2fr 2fr;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+}
+
+.inner-text-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  width: 290px;
+  height: 100px;
+  background-color: #1d1c1cce;
+}
+
+.inner-text-block > * {
+  color: white !important;
+}
+
+.inner-text-block p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .information-container {
+    padding: 10px;
   }
-  
+
   .inner-text-block {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin: 0 auto;
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    width: 250px;
-    height: 100px;
-    background-color: #1d1c1cce; 
+    padding: 15px;
   }
 
-  .inner-text-block> *{
-    color: white !important;
-    text-decoration: underline;
-  }
-  
   .inner-text-block h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  
-  .inner-text-block p {
     font-size: 16px;
-    line-height: 1.6;
-    margin: 0;
   }
 
-  @media (max-width: 600px) {
-    .information-container {
-      padding: 10px;
-    }
-  
-    .inner-text-block {
-      padding: 15px;
-    }
-  
-    .inner-text-block h3 {
-      font-size: 16px;
-    }
-  
-    .inner-text-block p {
-      font-size: 14px;
-    }
+  .inner-text-block p {
+    font-size: 14px;
   }
-  
-  @media (max-width: 400px) {
-  
-    .inner-text-block {
-      border-radius: 0;
-      box-shadow: none;
-      padding: 15px;
-      border-radius: 8px;
-    }
-  }
+}
 
-  @media (max-width: 600px) {
-  
-    .text-block{
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
+@media (max-width: 400px) {
+  .inner-text-block {
+    border-radius: 0;
+    box-shadow: none;
+    padding: 15px;
+    border-radius: 8px;
+    width: 210px;
+    height: 80px;
   }
+}
+
+@media (max-width: 630px) {
+  .text-block {
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+    margin: 0 auto;
+  }
+}

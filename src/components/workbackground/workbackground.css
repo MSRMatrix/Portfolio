@@ -1,36 +1,49 @@
-.work-container{
+.work-container {
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.work-div{
-    background-color: #1d1c1cce;
-    width: 300px;
-    padding: 20px;
-    border-radius: 8px;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 400px; 
+  }
+  
+  .work-div {
+    flex: 1;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     flex-direction: column;
-}
+    align-items: center;
+  }
+  
+  .work-text {
+    margin: 0;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    font-family: "Proza Libre", Arial, Helvetica;
+  }
+  
+  .work-div:nth-child(odd) {
+    background-color: #f0f0f0;
+  }
+  
+  .work-div:nth-child(even) {
+    background-color: #e0e0e0;
+  }
+  
+  .work-div p:last-child {
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 5px;
+  }
 
-@media (max-width: 660px){
-    .work-container{
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-        width: fit-content;
-    }
-   
-}
 
-@media (max-width: 350px) {
-    .work-div{
-        width: 200px;
+  @media (max-width: 900px){
+    .work-container {
+        flex-direction: column-reverse;
+        align-items: start;
+      }
+  }
+
+  @media (max-width: 600px){
+    .work-div>p:nth-child(1), .work-div>p:nth-child(2){
         font-size: 10px;
     }
-}
-
+  }

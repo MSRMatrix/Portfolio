@@ -18,7 +18,7 @@ const Dashboard = () => {
         setExiting(true);
         return next();
       }}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 1 }}
     >
       {exiting? null : <Outlet />}
     </motion.div>

@@ -2,10 +2,20 @@ import { useEffect, useState } from "react";
 import "./workbackground.css";
 
 const Workbackground = () => {
-  const [topic, setTopic] = useState("topic");
+  const [topic, setTopic] = useState("topic enter-class");
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [hoveredIndex, setHoveredIndex] = useState(null);
 
   useEffect(() => {
-    setTopic(topic + " enter-class");
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
 
   const history = [
@@ -27,12 +37,39 @@ const Workbackground = () => {
     },
   ];
 
+  const indexCatcher = (index) => {
+    if (windowWidth < 400) {
+      return `${(index + 2) * 8}%`;
+    }
+    return `${(index + 2) * 10}%`;
+  };
+
+  function getRandomColor() {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+  }
+
   return (
     <div className="information-container">
       <h1 className={topic}>Beruflicher Werdegang</h1>
       <div className="work-container">
         {history.map((item, index) => (
-          <div key={index} className="work-div">
+          <div
+            key={index}
+            style={{
+              width: indexCatcher(index + 4),
+              height: indexCatcher(index),
+              backgroundColor:
+                hoveredIndex === index ? getRandomColor() : ""
+            }}
+            onMouseEnter={() => setHoveredIndex(index)}
+            onMouseLeave={() => setHoveredIndex(null)}
+            className="work-div"
+          >
             <p className="work-text">{item.info}</p>
             <p className="work-text">{item.year}</p>
           </div>

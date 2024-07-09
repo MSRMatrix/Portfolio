@@ -35,7 +35,7 @@
     display: flex;
     justify-self: right;
     gap: 20px;
-    font-family: "Proza Libre", sans-serif;
+    font-family: "Proza Libre", Arial, Helvetica;
 }
 
 a{

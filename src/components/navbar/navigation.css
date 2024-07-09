@@ -53,6 +53,9 @@ a{
     font-size: 25px;
     color: rgb(151, 151, 151);
     transition: 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .dropdown>button:hover{
@@ -87,7 +90,6 @@ a{
     text-decoration: none;
     color: white;
     transition: all 0.2s ease-in-out;
-    background-color: #2c3e50be;
 }
 
 .dropdown-item:hover{

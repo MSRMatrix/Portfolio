@@ -102,7 +102,7 @@
         position: static;
     }
     .work-div:hover .hidden-about-text {
-        font-size: 40%;
+        font-size: 50%;
     }
     .work-text{
         font-size: 10px !important;

@@ -67,8 +67,7 @@ const Workbackground = () => {
             style={{
               width: indexCatcher(index + 4),
               height: indexCatcher(index),
-              backgroundColor: hoveredIndex === index ? getRandomColor() : ""
-            }}
+              backgroundColor: hoveredIndex === index ? getRandomColor() : ""}}
             onMouseEnter={() => setHoveredIndex(index)}
             onMouseLeave={() => setHoveredIndex(null)}
             className="work-div"

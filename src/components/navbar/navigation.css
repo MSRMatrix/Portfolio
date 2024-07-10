@@ -126,7 +126,6 @@ a{
     background-color: #7b79ff;
     transition: all 0.5s ease-in-out;
     transform: scaleX(0);
-    
     opacity: 0;
 }
 

@@ -1,110 +1,118 @@
 .work-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    height: 400px; 
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 400px;
 }
 
 .work-div {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: 0.2s ease-in-out;
-    transform-origin: bottom;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.2s ease-in-out;
+  transform-origin: bottom;
+  transform: scaleY(0);
+  transition: all 1s ease-in-out;
+  z-index: 1;
+}
+
+.transform-class{
     transform: scaleY(1);
-    transition: all 0.5s ease-in-out;
-    z-index: 1;
+    transform: top;
 }
 
 .work-text {
-    margin: 0;
-    text-align: center;
-    font-size: 14px;
-    color: #333;
-    font-family: "Proza Libre", Arial, Helvetica;
+  margin: 0;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+  font-family: "Proza Libre", Arial, Helvetica;
 }
 
 .work-div:nth-child(odd) {
-    background-color: #f0f0f0;
+  background-color: #f0f0f0;
 }
 
 .work-div:nth-child(even) {
-    background-color: #e0e0e0;
+  background-color: #e0e0e0;
 }
 
 .work-div p:last-child {
-    font-weight: bold;
-    font-size: 16px;
-    margin-top: 5px;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 5px;
 }
 
 .the-infos {
-    position: relative;
+  position: relative;
 }
 
 .hidden-about-text {
-    display: none;
-    position: absolute;
-    bottom: 120%;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #7b79fff1;
-    color: white;
-    padding: 5px;
-    border-radius: 5px;
-    width: 330px;
-    font-size: 13px;
-    white-space: wrap;
-    z-index: 9999;
+  display: none;
+  position: absolute;
+  bottom: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #7b79fff1;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  width: 330px;
+  font-size: 13px;
+  white-space: wrap;
+  z-index: 9999;
 }
 
 .work-div:hover .hidden-about-text {
-    display: block;
+  display: block;
 }
 
-@media (min-width: 1301px){
-    .work-div{
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-        
-    }
+@media (min-width: 1301px) {
+  .work-div {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
 }
 
 @media (max-width: 1300px) {
-    .work-div{
-        border-top-right-radius: 20px;
-        border-end-end-radius: 20px;
-        transform-origin: left;
-        transform: scaleX(1);
-    }
-    .work-container {
-        flex-direction: column-reverse;
-        align-items: start;
-    }
-    .work-div:hover .hidden-about-text {
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        color: white;
-        padding: 5px;
-        border-radius: 5px;
-        width: 100%;
-        height: fit-content;
-        font-size: 53%;
-        white-space: wrap;
-    }
+  .work-div {
+    border-top-right-radius: 20px;
+    border-end-end-radius: 20px;
+    transform-origin: left;
+    transform: scaleX(0);
+  }
+
+  .transform-class{
+    transform: scaleX(1);
+  }
+  .work-container {
+    flex-direction: column-reverse;
+    align-items: start;
+  }
+  .work-div:hover .hidden-about-text {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    width: 100%;
+    height: fit-content;
+    font-size: 53%;
+    white-space: wrap;
+  }
 }
 
 @media (max-width: 600px) {
-     .the-infos{
-        position: static;
-    }
-    .work-div:hover .hidden-about-text {
-        font-size: 50%;
-    }
-    .work-text{
-        font-size: 10px !important;
-    }
+  .the-infos {
+    position: static;
+  }
+  .work-div:hover .hidden-about-text {
+    font-size: 50%;
+  }
+  .work-text {
+    font-size: 10px !important;
+  }
 }

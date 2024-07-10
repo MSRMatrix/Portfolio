@@ -5,8 +5,10 @@ const Workbackground = () => {
   const [topic, setTopic] = useState("topic enter-class");
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [hoveredIndex, setHoveredIndex] = useState(null);
+  const [transformClass, setTransformClass] = useState("")
 
   useEffect(() => {
+    setTransformClass("transform-class")
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
     };
@@ -16,6 +18,8 @@ const Workbackground = () => {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
+
+    
   }, []);
 
   const history = [
@@ -70,7 +74,7 @@ const Workbackground = () => {
               backgroundColor: hoveredIndex === index ? getRandomColor() : ""}}
             onMouseEnter={() => setHoveredIndex(index)}
             onMouseLeave={() => setHoveredIndex(null)}
-            className="work-div"
+            className={`work-div ${transformClass}`}
           >
             <div className="the-infos">
               <p className="hidden-about-text">{item.about}</p>

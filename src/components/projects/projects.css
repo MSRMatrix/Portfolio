@@ -16,8 +16,13 @@
     text-align: center;
   }
   
-  .project-div:hover {
-    background-color: #e0e0e0;
+  .project-div:hover{
+    background-color: #186a79;
+  }
+
+  .project-div:hover h3{
+    color: white !important;
+    border-bottom: 2px solid white;
   }
   
   .project-div.show-project-div {

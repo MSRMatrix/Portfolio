@@ -10,7 +10,7 @@ const Startsite = () => {
 
   return (
     <div className="information-container">
-      <div className={topicDiv}>
+      <div className={`${topicDiv} startsite-style`}>
         <h1>Michael</h1>
         <h2>Ich präsentiere die Zukunft der Web Developer Branche!</h2>
       </div>

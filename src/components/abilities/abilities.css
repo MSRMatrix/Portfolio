@@ -32,6 +32,10 @@
   transform: translateY(-30px);
 }
 
+.picture-div:hover h3{
+  color: white !important;
+}
+
 .picture-div img {
   width: 100%;
   height: 150px;

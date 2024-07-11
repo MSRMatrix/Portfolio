@@ -4,38 +4,8 @@
     transform: translate(0px);
 }
 
-.ki-div{
-    width: 50%;
-   display: flex;
-   transition: 1s ease-in-out;
-}
-
-.startsite-image{
-    width: 100%;
-    opacity: 0;
-    z-index: 1;
-    transition: 0.3s ease-in-out;
-}
-
-.startsite-image:first-child{
-    transform: translate(-100px);
-}
-
-.startsite-image:last-child{
-    transform: translate(100px);
-}
-
-.pic-animation{
-    transition: 1s ease-in-out;
-    opacity: 0.6;
-}
-
-.pic-animation:first-child, .pic-animation:last-child{
-    transform: translate(0px);
-}
-
-.pic-animation:hover{
-    transition: 0.3s ease-in-out;
-    opacity: 1;
-    border-radius: 30px;
+.startsite-style{
+    background-color: #1d1c1cee;
+    border-radius: 8px;
+    padding: 20px;
 }

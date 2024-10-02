@@ -3,6 +3,7 @@ import "./projects.css";
 import acoustiFlow from "/src/assets/walkman.jpg";
 import cashStuffing from "/src/assets/cash-stuffing.png";
 import weatherApp from "/src/assets/weather-app.png";
+import pokePalCodex from "/src/assets/pikachu-1.png";
 import { useEffect, useState } from "react";
 
 const Projects = () => {
@@ -68,6 +69,26 @@ const Projects = () => {
             <img src={weatherApp} alt="" className={showPic} />
           </a>
         </div>
+
+
+        <div className={showProjectDiv}>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://pokepal-codex.vercel.app/"
+          >
+            <h3 className="project-topic">PokePal Codex</h3>
+          </a>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://pokepal-codex.vercel.app/"
+          >
+            <img src={pokePalCodex} alt="" className={showPic} />
+          </a>
+        </div>
+
+
       </div>
     </div>
   );

@@ -17,7 +17,7 @@ const ContactMe = () => {
     },
     {
       name: "GitHub",
-      url: "https://github.com/TwinMine?tab=overview&from=2023-04-01&to=2023-04-30",
+      url: "https://github.com/MSRMatrix?tab=overview&from=2023-04-01&to=2023-04-30",
       className: "fa-brands fa-github fa-shake"
     }
   ];

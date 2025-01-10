@@ -4,6 +4,7 @@ import acoustiFlow from "/src/assets/walkman.jpg";
 import cashStuffing from "/src/assets/cash-stuffing.png";
 import weatherApp from "/src/assets/weather-app.png";
 import pokePalCodex from "/src/assets/pikachu-1.png";
+import todoWave from "/src/assets/todo-list.png"
 import { useEffect, useState } from "react";
 
 const Projects = () => {
@@ -86,9 +87,26 @@ const Projects = () => {
           >
             <img src={pokePalCodex} alt="" className={showPic} />
           </a>
+          
         </div>
 
-
+        <div className={showProjectDiv}>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://todo-frontend-five-eta.vercel.app/"
+          >
+            <h3 className="project-topic">TodoWave</h3>
+          </a>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://todo-frontend-five-eta.vercel.app/"
+          >
+            <img src={todoWave} alt="" className={showPic} />
+          </a>
+          
+        </div>
       </div>
     </div>
   );

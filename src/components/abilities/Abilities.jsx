@@ -83,7 +83,7 @@ const Abilities = () => {
           </div>
         ))}
       </div>
-      <h1 className={topic}>Lernphase</h1>
+      {/* <h1 className={topic}>Lernphase</h1>
       <div className="img-container">
         {inProgress.map((skill) => (
           <div key={skill.name} className={imageContainer}>
@@ -94,7 +94,7 @@ const Abilities = () => {
             </h3>
           </div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };

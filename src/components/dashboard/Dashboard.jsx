@@ -9,6 +9,8 @@ const Dashboard = () => {
     const [exiting, setExiting] = useState(false);
     return(
     <>
+    <p style={{background: "red"}}>Ein neues Portfolio ist in Arbeit</p>
+    
      <Navigation />
      <motion.div
       key={location.pathname}
